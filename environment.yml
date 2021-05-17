@@ -1,0 +1,13 @@
+name: demo-workflow-env
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.8
+  # Core scientific python
+  - matplotlib
+
+  # Jupyter Environment
+  - notebook
+  - jupyter_contrib_nbextensions
