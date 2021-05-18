@@ -3,4 +3,4 @@ images/
 __pycache__/
 *.html
 DS_Store
-.egg-info/
+*.egg-info/
