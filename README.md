@@ -5,6 +5,9 @@ Lab Earth Data Analytics - Foundations Professional Certificate program. If
 this were a real project we'd have a nice 1-3 sentence overview of the project
 here. This repo should generate a html file representing a final blog post.
 
+## Maintainers
+This repo is maintained by @lwasser and @nkorinek
+
 ## Setup
 
 To set up this repository, you will need to:
@@ -45,6 +48,7 @@ Then, make sure you are in the workflow directory. Run the main workflow:
 $ cd ea-demo-workflow
 
 ```
+##  Run Workflow Using Bash Directly
 
 Now you should be able to run the bash script without any errors.
 
@@ -53,3 +57,47 @@ $ . main.sh
 ```
 
 The final output, `blog.html`, will be in the `outputs` directory.
+
+## Makefile Workflow
+
+Makefiles are another way to run a workflow. Makefiles (and snakemake!) are
+great because they allow you to break your workflow down into pieces,  and run
+various parts if you wish. You can also setup rules.
+
+This makes Makefiles a bit more expressive and customizable than using Bash directly.
+You can call a bash script within a make file.  
+
+To run the Makefile in this directory:
+
+Cd to the directory:
+
+```Bash
+$ cd ea-demo-workflow
+```
+
+Then run make:
+
+```bash
+$ make
+```
+
+In the makefile in this repository we have also setup a cleaning step that can be
+used to clean up the ``.html`` file created in the workflow. You can run that step
+using:
+
+```Bash
+$ make clean
+```
+
+Your cleaning step  
+could be used to remove data. Alternatively you may setup steps that perform
+different parts of your workflow such as:
+
+1. get the data,
+2. process the data
+3. produce the final output
+
+## Resources
+
+* [More on makefiles:](https://opensource.com/article/18/8/what-how-makefile)    
+* [Carpentry Make Tutorials](https://swcarpentry.github.io/make-novice/02-makefiles/index.html)

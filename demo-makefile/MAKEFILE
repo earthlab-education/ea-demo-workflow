@@ -1,0 +1,14 @@
+all: say_hello generate
+
+say_hello:
+	@echo "Hi, human! I am now building this project for you."
+
+generate:
+	@echo "Creating empty text files..."
+	touch file-{1..10}.txt
+	@echo "All done making files"
+
+# running 'make clean' will clean things up
+clean:
+	@echo "OK, i'm now Cleaning up the html files that I just made."
+	rm outputs/*.html
