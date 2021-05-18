@@ -21,12 +21,27 @@ To setup the project environment, first,  make sure that anaconda or
 Miniconda are installed on your machine. We prefer miniconda for this Environment
 but either should work. Then,
 
-1. CD to the `ea-demo-workflow` repo
+1. In bash, `cd` to the `ea-demo-workflow` repo
 2. Install the environment file
 
 ```
 $ cd ea-demo-workflow
 $ conda env create -f environment.yml
+```
+
+#### OPTIONAL - Package Setup
+
+Activate your workflow environment:
+
+```bash
+$ conda activate demo-workflow-env
+```
+
+Install the included Python package.
+
+```bash
+$ pip install -e .
+
 ```
 
 ### Run the Bash Script To Create the Final Blog Post
