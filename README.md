@@ -1,47 +1,49 @@
-# ea-demo-workflow
+# Earth Analytics Demonstration Project Repository
 
-This is a demonstration workflow repository for the earth analytics
-certificate program.
+This repo contains an example project that is being used as a part of the Earth
+Lab Earth Data Analytics - Foundations Professional Certificate program. If
+this were a real project we'd have a nice 1-3 sentence overview of the project
+here. This repo should generate a html file representing a final blog post.
 
 ## Setup
 
-To set up this repository, you will need to create the conda environment
-included in the repository, and run the main bash script.
+To set up this repository, you will need to:
+
+1. Create the conda environment included in the repository, and
+2. run the `main` bash script.
 
 ### Conda Environment Setup
 
-In order for the bash script to run, you need to have certain python
-packages installed. All the required packages are in the conda environment
-you can create using the `environment.yml` file.
+To setup the project environment, first,  make sure that anaconda or
+Miniconda are installed on your machine. We prefer miniconda for this Environment
+but either should work. Then,
 
-In order to use this file, install the environment using:
+1. CD to the `ea-demo-workflow` repo
+2. Install the environment file
 
 ```
-conda env create -f environment.yml
+$ cd ea-demo-workflow
+$ conda env create -f environment.yml
 ```
 
-* Also note that for the code above to work, you need to be in the directory
-where the `environment.yml` file lives so CD to that directory first
-
-`$ cd ea-demo-workflow`
-
-### Running the Bash script
+### Run the Bash Script To Create the Final Blog Post
 
 The bash script runs both of the notebooks in the `code` directory, and
 creates an `images` directory that is used to create the final `blog.html`
 output. To run the bash script, you have to ensure you are in the `code`
 directory within `ea-demo-workflow`.
 
+First, activate the workflow environment:
+
+```
+$ conda activate demo-workflow-env
+```
+
+Then, make sure you are in the workflow directory. Run the main workflow:
+
 ```
 $ cd ea-demo-workflow
-$ cd code
-```
 
-Once you are in the code directory, ensure that the conda environment is
-activated.
-
-```
-$ conda activate earth-analytics-python
 ```
 
 Now you should be able to run the bash script without any errors.
@@ -50,4 +52,4 @@ Now you should be able to run the bash script without any errors.
 $ . main.sh
 ```
 
-The final output, `blog.html`, will be in the `code` directory. 
+The final output, `blog.html`, will be in the `outputs` directory.
