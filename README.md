@@ -1,5 +1,8 @@
 # Earth Analytics Demonstration Project Repository
 
+[![DOI](https://zenodo.org/badge/367184296.svg)](https://zenodo.org/badge/latestdoi/367184296)
+
+
 This repo contains an example project that is being used as a part of the Earth
 Lab Earth Data Analytics - Foundations Professional Certificate program. If
 this were a real project we'd have a nice 1-3 sentence overview of the project
